@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Heading } from '@metagg/mgg-uikit'
-import { breakpoints } from 'theme/Breakpoints'
+import { breakpoints } from '../../theme/Breakpoints'
 
 export const WrapperContainer = styled.div`
     display: flex;

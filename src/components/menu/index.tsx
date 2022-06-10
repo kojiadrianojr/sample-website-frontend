@@ -5,9 +5,9 @@ import Logo from "./Logo";
 import Panel from "./Panel";
 import { BodyWrapper, StyledNav, Wrapper, Inner, MobileOnlyOverlay} from "./styled";
 import links from "./config";
-import LaunchButton from "components/LaunchButton";
+import LaunchButton from "../LaunchButton";
 
-const Menu = (props) => {
+const Menu = (props:any) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
   const [isPushed, setIsPushed] = React.useState(!isMobile);

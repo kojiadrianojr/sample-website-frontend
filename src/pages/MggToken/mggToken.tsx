@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Text, Flex, Heading, Button } from '@metagg/mgg-uikit'
 import styled, { ThemeContext } from 'styled-components'
-import Page from 'components/layout/Page'
-import { SvgProps } from 'components/svgIcon/types'
-import SvgIcon from 'components/svgIcon/SvgIcon'
+import Page from '../../components/layout/Page'
+import { SvgProps } from '../../components/svgIcon/types'
+import SvgIcon from '../../components/svgIcon/SvgIcon'
 import { BgContainer } from '../../style/Global'
 import {
   Card,

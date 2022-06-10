@@ -19,6 +19,7 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@loadable/component": "^5.15.2",
     "@metagg/mgg-uikit": "^1.1.2",
     "@mui/material": "^5.6.3",
     "@types/react-image-gallery": "^1.0.5",
@@ -41,7 +42,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.26",
-    "@types/react": "^18.0.9",
+    "@types/react": "^18.0.12",
     "@types/styled-components": "^5.1.25",
     "gatsby-plugin-root-import": "^2.0.8",
     "gh-pages": "^4.0.0",

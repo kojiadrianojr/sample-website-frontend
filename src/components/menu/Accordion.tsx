@@ -10,6 +10,7 @@ interface Props extends PushedProps {
   icon?: React.ReactElement | string;
   initialOpenState?: boolean;
   className?: string;
+  children?: any
 }
 
 const Container = styled.div`

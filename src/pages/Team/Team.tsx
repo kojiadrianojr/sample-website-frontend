@@ -5,8 +5,8 @@ import { CardContainer } from './styled';
 import * as IconModule from './icons'
 
 interface Props {
-  name: string;
-  title: string;
+  name?: string;
+  title?: string;
 }
 
 const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> };

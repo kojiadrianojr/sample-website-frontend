@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import { Button } from '@metagg/mgg-uikit'
-import { Fonts } from 'theme/Base';
+import { Fonts } from '../theme/Base';
 import defaultBG from "../assets/background/MainBG.png";
 import { breakpoints } from '../theme/Breakpoints';
 

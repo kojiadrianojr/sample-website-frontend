@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Flex, Heading, Text } from "@metagg/mgg-uikit";
 import { Grid } from "@mui/material";
-import LaunchButton from "components/LaunchButton";
+import LaunchButton from "../LaunchButton";
 import MGGLogo from 'assets/static/logo.png'
 import { SocialIcon } from "./IconHelpers";
 import {

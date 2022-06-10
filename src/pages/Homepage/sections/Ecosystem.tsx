@@ -49,13 +49,12 @@ const CardSection = styled(Flex)`
 const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> }
 
 const Card: React.FC<IEcosystems> = ({
- image,
-  name,
-  subtitle,
-  description,
+ image='',
+  name='',
+  subtitle='',
+  description='',
   status = "",
 }) => {
-  const theme = useContext(ThemeContext);
     const Icon = Icons[image]
     const iconElement: React.ReactElement = <Icon />
   return (

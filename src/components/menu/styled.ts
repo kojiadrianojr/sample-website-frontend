@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_FULL, SIDEBAR_WIDTH_REDUCED } from "./config";
-import { breakpoints } from "theme/Breakpoints";
-import Overlay from 'components/overlay/Overlay'
+import { breakpoints } from "../../theme/Breakpoints";
+import Overlay from '../overlay/Overlay'
 
 export const Wrapper = styled.div`
   position: relative;

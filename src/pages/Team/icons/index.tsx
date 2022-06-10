@@ -12,4 +12,3 @@ export { default as AldrickBonaobraImg } from "./AldrickBonaobra";
 export { default as MedardMandaneImg } from "./MedardMandane";
 export { default as HarvinCadagImg } from "./HarvinCadag";
 export { default as JohnCarloAriolaImg } from "./JohnCarloAriola";
-export { default as PlaceholderImg } from "./Placeholder";

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { ThemeProvider as SCThemeProvider } from 'styled-components'
 import { dark } from '@metagg/mgg-uikit'
-import { Colors as addOnColors } from 'theme/Base'
+import { Colors as addOnColors } from '../theme/Base'
 
 const CACHE_KEY = 'IS_DARK'
 const newDark = {
@@ -11,14 +11,14 @@ const newDark = {
 
 const ThemeContext = React.createContext({ isDark: true, toggleTheme: () => null })
 
-const ThemeContextProvider = ({ children }) => {
+const ThemeContextProvider = ({ children }: {children: ReactNode}) => {
   const [isDark, setIsDark] = useState(() => {
     const isDarkUserSetting = localStorage.getItem(CACHE_KEY)
     return isDarkUserSetting ? JSON.parse(isDarkUserSetting) : true
   })
 
   const toggleTheme = () => {
-    setIsDark((prevState) => {
+    setIsDark((prevState:any) => {
       localStorage.setItem(CACHE_KEY, JSON.stringify(!prevState))
       return !prevState
     })

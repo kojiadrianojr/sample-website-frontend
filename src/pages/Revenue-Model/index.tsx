@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from 'components/layout/Page'
+import Page from '../../components/layout/Page'
 import * as Sections from './sections';
 
 const Pages = (Sections as unknown) as { [key: string]: React.FC<{}> };

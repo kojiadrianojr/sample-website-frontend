@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { breakpoints } from 'theme/Breakpoints'
+import { breakpoints } from '../../theme/Breakpoints'
 
 export const StyledLaunchButton = styled.button`
     background-color: ${({theme}) => theme.colors.MGG_accent2};
