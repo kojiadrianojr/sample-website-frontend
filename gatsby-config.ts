@@ -46,4 +46,8 @@ const config: GatsbyConfig = {
   "gatsby-plugin-styled-components", "gatsby-plugin-react-helmet", "gatsby-plugin-root-import"]
 };
 
+module.exports = {
+  patchPrefix: 'https://kojiadrianojr.github.io/test-website/'
+}
+
 export default config;
