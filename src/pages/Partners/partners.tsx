@@ -1,7 +1,7 @@
 import React, { useState, useContext, useCallback } from 'react'
 import { Text, Flex, Heading } from '@metagg/mgg-uikit'
 import styled, { ThemeContext } from 'styled-components'
-import Page from 'components/layout/Page'
+import Page from '../../components/layout/Page'
 
 import { NavOption } from '../../style/Global'
 import partners from '../../config/constants/partners'

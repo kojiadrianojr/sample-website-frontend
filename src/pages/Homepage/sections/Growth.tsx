@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Text, Heading, Flex } from "@metagg/mgg-uikit";
 import { Grid } from "@mui/material";
-
 import GrowthPNG from "assets/images/Growth.png";
 import { GrowthContainer, PageTitle } from "./styled";
 import { Figures } from "../../../config/constants/homepageConfig";

@@ -1,5 +1,4 @@
-import React, { SVGAttributes, useContext } from 'react'
-import { ThemeContext } from 'styled-components'
+import React from 'react'
 import PNG from 'assets/teams/placeholder-icon.png'
 import { SvgProps } from '../../../components/svgIcon/types'
 import SvgIcon from '../../../components/svgIcon/SvgIcon'

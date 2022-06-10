@@ -1,7 +1,7 @@
 import React, { useState, useContext, useCallback } from 'react'
 import { Text, Flex, Heading } from '@metagg/mgg-uikit'
 import styled, { ThemeContext } from 'styled-components'
-import Page from 'components/layout/Page'
+import Page from '../../components/layout/Page'
 import { NavOption } from '../../style/Global'
 import roadmaps from '../../config/constants/roadmaps'
 import {
@@ -18,7 +18,6 @@ import {
 
 
 const Roadmap = () => {
-  const theme = useContext(ThemeContext)
   const [active, setActive] = useState(Object.keys(roadmaps).length)
   const [getYear, setYear] = useState(roadmaps[Object.keys(roadmaps).pop()])
 

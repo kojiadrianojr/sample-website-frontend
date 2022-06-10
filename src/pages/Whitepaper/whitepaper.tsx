@@ -3,7 +3,7 @@ import { Text, Flex, Heading, Button } from '@metagg/mgg-uikit'
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css'
 import styled, { ThemeContext } from 'styled-components'
-import PageContainer from 'components/layout/Page'
+import PageContainer from '../../components/layout/Page'
 import { BgContainer } from '../../style/Global'
 import {
   Card,

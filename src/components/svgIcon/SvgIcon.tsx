@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { SvgContainer } from "./svgicon-styles"
 
 interface Props {
   Icon?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>

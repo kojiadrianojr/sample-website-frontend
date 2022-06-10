@@ -1,11 +1,14 @@
-import React from "react";
-import { ModalProvider } from "@metagg/mgg-uikit";
-import { ThemeContextProvider } from "contexts/ThemeContext";
+import React, {ReactNode} from "react";
+import { ThemeContextProvider } from "../contexts/ThemeContext";
 
-const Providers: React.FC = ({ children }) => {
+interface Props { 
+  children?: ReactNode
+ }
+
+const Providers = ({ children }: Props) => {
   return (
     <ThemeContextProvider>
-      <ModalProvider>{children}</ModalProvider>
+      {children}
     </ThemeContextProvider>
   );
 };

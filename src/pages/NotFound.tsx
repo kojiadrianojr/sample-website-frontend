@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import { Button, Heading, Text } from '@metagg/mgg-uikit'
-import Page from 'components/layout/Page'
+import Page from '../components/layout/Page'
 import MGGLogo from 'assets/static/logo.png'
 
 

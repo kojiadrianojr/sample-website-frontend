@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import styled, { ThemeContext } from "styled-components";
 import { Flex, Text } from "@metagg/mgg-uikit";
 import { Grid } from "@mui/material";
-import { breakpoints } from "theme/Breakpoints";
-import { SvgProps } from "components/svgIcon/types";
+import { breakpoints } from "../../../theme/Breakpoints";
 import { EcoContainer, PageTitle } from "./styled";
-import { IEcosystems, Ecosystems } from "../../../config/constants/homepageConfig";
+import { SvgProps } from "../../../components/svgIcon/types";
+import { IEcosystems } from "../../../config/constants/types";
+import { Ecosystems } from "../../../config/constants/homepageConfig";
 import * as IconModule from './icons'
 
 const Container = styled(Flex)`
