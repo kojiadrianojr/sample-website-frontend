@@ -3,6 +3,11 @@ import MainBG from "assets/background/RevenueModelBG.png";
 import { Flex, Text } from '@metagg/mgg-uikit'
 import { breakpoints } from '../../../theme/Breakpoints';
 
+const Container = styled.div`
+  color: red;
+`
+export default Container
+
 export const SectionContainer = styled.div<{ height?: string; mobileHeight?: string}>`
   min-height: ${({ height }) => height ?? "100"}vh;
   display: flex;
@@ -13,14 +18,14 @@ export const SectionContainer = styled.div<{ height?: string; mobileHeight?: str
 `;
 
 export const HeaderContainer = styled(SectionContainer)`
-  background-color: ${({ theme }) => theme.addOnColors.background1};
+  background-color: #140937;
   background-image: url(${MainBG});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
 `
 export const DetailsContainer = styled(SectionContainer)`
-  background-color: ${({theme}) => theme.addOnColors.background1};
+  background-color: #140937;
 `
 export const Box = styled(Flex)`
   max-width: 1440px;

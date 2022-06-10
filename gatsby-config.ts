@@ -43,7 +43,16 @@ const config: GatsbyConfig = {
       display: 'swap'
     }
   },
-  "gatsby-plugin-styled-components", "gatsby-plugin-react-helmet", "gatsby-plugin-root-import"]
+  {
+    resolve: `gatsby-plugin-emotion`,
+    options: {
+      sourceMap: true,
+      autoLabel: 'dev-only',
+      labelFormat: `[local]`,
+      cssPropOptimization: true,
+    }
+  },
+  "gatsby-plugin-styled-components", "gatsby-plugin-react-helmet", "gatsby-plugin-root-import", 'gatsby-plugin-image', 'gatsby-plugin-sharp', 'gatsby-transformer-sharp']
 };
 
 export default config;

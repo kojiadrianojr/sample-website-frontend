@@ -6,8 +6,15 @@ import { SvgProps } from "../../../components/svgIcon/types";
 import { RevenueModel } from "../../../config/constants/revenue-model";
 import { RevenueModelConfig } from "../../../config/constants/types";
 import { DetailsContainer, Title, Box } from "./styled";
-import * as IconModule from "../Icons";
+import ScholarshipIcon from '../Icons/Scholarship'
+import LaunchpadIcon from '../Icons/Launchpad'
+import SalesIcon from '../Icons/Sales'
+import InvestmentsIcon from '../Icons/Investments'
+// import IconModule from "../Icons";
 
+const IconModule = {
+  ScholarshipIcon, LaunchpadIcon, SalesIcon, InvestmentsIcon
+}
 const Container = styled.div`
   margin: 0px auto;
   padding: 17px;

@@ -70,45 +70,6 @@ const NavbarMenu: React.FC<{ links: Array<IMenuEntry> }> = ({ links }) => {
   return (
     <LinkContainer>
       {links.map((link) => {
-        if (link.items) {
-          return (
-            <Dropdown
-              key={link.label}
-              navbar
-              target={
-                <MenuEntry>
-                  <NavbarTitle
-                    label={link.label}
-                    isActive={link.items.filter(
-                      (item) => item.href === location.pathname
-                    )}
-                  />
-                </MenuEntry>
-              }
-            >
-              <NavBarContainer>
-                {link.items.map((item) => {
-                  return (
-                    <StyledMenuEntry key={item.href} secondary>
-                      <MenuLink target="_self" href={item.href}>
-                        <StyledLinkLabel
-                          isActive={item.href === location.pathname}
-                        >
-                          <Flex
-                            alignItems="center"
-                            justifyContent="space-between"
-                          >
-                            {item.label}
-                          </Flex>
-                        </StyledLinkLabel>
-                      </MenuLink>
-                    </StyledMenuEntry>
-                  );
-                })}
-              </NavBarContainer>
-            </Dropdown>
-          );
-        }
         return (
           link.href && (
             <MenuEntry key={link.label}>

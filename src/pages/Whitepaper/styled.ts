@@ -1,4 +1,4 @@
-import styled, { ThemeContext } from 'styled-components'
+import styled from 'styled-components'
 import { Flex, Heading, Button } from '@metagg/mgg-uikit'
 
 export const Card = styled.div`

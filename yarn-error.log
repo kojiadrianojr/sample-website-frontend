@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\rolan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add raect-helmet
+  C:\Program Files\nodejs\node.exe C:\Users\rolan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby-plugin-image gatsby-plugin-sharp gatsby-source-fiesystem gatsby-transformer-sharp
 
 PATH: 
   C:\Users\rolan\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\rolan\bin;C:\Python310\Scripts;C:\Python310;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\rolan\AppData\Local\Microsoft\WindowsApps;C:\Users\rolan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rolan\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/raect-helmet: Not found
+  Error: https://registry.yarnpkg.com/gatsby-source-fiesystem: Not found
       at Request.params.callback [as _callback] (C:\Users\rolan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
       at Request.self.callback (C:\Users\rolan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:520:28)
@@ -54,6 +54,7 @@ npm manifest:
       "@types/react-image-gallery": "^1.0.5",
       "babel-plugin-styled-components": "^2.0.7",
       "gatsby": "^4.12.1",
+      "gatsby-plugin-emotion": "^7.16.0",
       "gatsby-plugin-google-fonts": "^1.0.1",
       "gatsby-plugin-google-gtag": "^4.12.1",
       "gatsby-plugin-manifest": "^4.14.0",
@@ -594,7 +595,7 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.8.0"
   
-  "@babel/plugin-syntax-jsx@^7.0.0", "@babel/plugin-syntax-jsx@^7.12.13", "@babel/plugin-syntax-jsx@^7.17.12":
+  "@babel/plugin-syntax-jsx@^7.0.0", "@babel/plugin-syntax-jsx@^7.12.13", "@babel/plugin-syntax-jsx@^7.17.12", "@babel/plugin-syntax-jsx@^7.2.0":
     version "7.17.12"
     resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.17.12.tgz#834035b45061983a491f60096f61a2e7c5674a47"
     integrity sha512-spyY3E3AURfxh/RHtjx5j6hs8am5NbUBGfcZ2vB3uShSpZdQyXSf5rR5Mk76vbtlAZOelyVQ71Fg0x9SG4fsog==
@@ -872,7 +873,7 @@ Lockfile:
     dependencies:
       "@babel/plugin-transform-react-jsx" "^7.16.7"
   
-  "@babel/plugin-transform-react-jsx@^7.0.0", "@babel/plugin-transform-react-jsx@^7.16.7", "@babel/plugin-transform-react-jsx@^7.17.12":
+  "@babel/plugin-transform-react-jsx@^7.0.0", "@babel/plugin-transform-react-jsx@^7.12.1", "@babel/plugin-transform-react-jsx@^7.16.7", "@babel/plugin-transform-react-jsx@^7.17.12":
     version "7.17.12"
     resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.17.12.tgz#2aa20022709cd6a3f40b45d60603d5f269586dba"
     integrity sha512-Lcaw8bxd1DKht3thfD4A12dqo1X16he1Lm8rIv8sTwjAYNInRS1qHa9aJoqvzpscItXvftKDCfaEQzwoVyXpEQ==
@@ -1144,7 +1145,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.5.4.tgz#1a89069978734e132fa4a59414ddb64e4b94fde7"
     integrity sha512-qnikpQgi30AS01aFlNQV6l8/qdZIcP76mp90ti+u4rucXHsn4afSKivQXApqxvrQG9+Ibv45STyvHizvxef/7A==
   
-  "@emotion/babel-plugin@^11.7.1":
+  "@emotion/babel-plugin-jsx-pragmatic@^0.1.5":
+    version "0.1.5"
+    resolved "https://registry.yarnpkg.com/@emotion/babel-plugin-jsx-pragmatic/-/babel-plugin-jsx-pragmatic-0.1.5.tgz#27debfe9c27c4d83574d509787ae553bf8a34d7e"
+    integrity sha512-y+3AJ0SItMDaAgGPVkQBC/S/BaqaPACkQ6MyCI2CUlrjTxKttTVfD3TMtcs7vLEcLxqzZ1xiG0vzwCXjhopawQ==
+    dependencies:
+      "@babel/plugin-syntax-jsx" "^7.2.0"
+  
+  "@emotion/babel-plugin@^11.2.0", "@emotion/babel-plugin@^11.7.1":
     version "11.9.2"
     resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.9.2.tgz#723b6d394c89fb2ef782229d92ba95a740576e95"
     integrity sha512-Pr/7HGH6H6yKgnVFNEj2MVlreu3ADqftqjqwUvDy/OJzKFgxKeTQ+eeUf20FOTuHVkDON2iNa25rAXVYtWJCjw==
@@ -1161,6 +1169,16 @@ Lockfile:
       find-root "^1.1.0"
       source-map "^0.5.7"
       stylis "4.0.13"
+  
+  "@emotion/babel-preset-css-prop@^11.2.0":
+    version "11.2.0"
+    resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.2.0.tgz#c7e945f56b2610b438f0dc8ae5253fc55488de0e"
+    integrity sha512-9XLQm2eLPYTho+Cx1LQTDA1rATjoAaB4O+ds55XDvoAa+Z16Hhg8y5Vihj3C8E6+ilDM8SV5A9Z6z+yj0YIRBg==
+    dependencies:
+      "@babel/plugin-transform-react-jsx" "^7.12.1"
+      "@babel/runtime" "^7.7.2"
+      "@emotion/babel-plugin" "^11.2.0"
+      "@emotion/babel-plugin-jsx-pragmatic" "^0.1.5"
   
   "@emotion/cache@^11.7.1":
     version "11.7.1"
@@ -6081,6 +6099,14 @@ Lockfile:
       "@parcel/transformer-json" "2.6.0"
       "@parcel/transformer-raw" "2.6.0"
       "@parcel/transformer-react-refresh-wrap" "2.6.0"
+  
+  gatsby-plugin-emotion@^7.16.0:
+    version "7.16.0"
+    resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-7.16.0.tgz#a71de12ab6c36f1b56bb0907f43c8407939c43da"
+    integrity sha512-i2h2DoNaCEvipX0O52ywDxn+x3d//ktChsGHcUcy7Jh7Q2uNoroVdfYKDqIRBDvGB91R7LtuazXo441GcULrlQ==
+    dependencies:
+      "@babel/runtime" "^7.15.4"
+      "@emotion/babel-preset-css-prop" "^11.2.0"
   
   gatsby-plugin-google-fonts@^1.0.1:
     version "1.0.1"

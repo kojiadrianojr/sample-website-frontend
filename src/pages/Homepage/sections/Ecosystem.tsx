@@ -7,7 +7,25 @@ import { EcoContainer, PageTitle } from "./styled";
 import { SvgProps } from "../../../components/svgIcon/types";
 import { IEcosystems } from "../../../config/constants/types";
 import { Ecosystems } from "../../../config/constants/homepageConfig";
-import * as IconModule from './icons'
+import MetaGamers from "./icons/MetaGamers";
+import MetaGamingPad from "./icons/MetaGamingPad";
+import Dao from "./icons/Dao";
+import Labs from "./icons/Labs";
+import Yield from "./icons/Yield";
+import Warriors from "./icons/Warriors";
+import Vault from "./icons/Vault";
+import Nft from "./icons/Nft";
+
+const IconModule = {
+  MetaGamers,
+  MetaGamingPad,
+  Dao,
+  Labs,
+  Yield,
+  Warriors,
+  Vault,
+  Nft,
+};
 
 const Container = styled(Flex)`
   padding: 50px;

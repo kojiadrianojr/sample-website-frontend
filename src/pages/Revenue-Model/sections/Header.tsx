@@ -10,7 +10,7 @@ const Container = styled.div`
     font-size: 8px;
     margin: 0px auto;
     width: 100%;
-    ${({theme}) => theme.mediaQueries.md} {
+    @media screen and (min-width: 500px) {
         font-size: 17px;
         width: 1200px;
     }

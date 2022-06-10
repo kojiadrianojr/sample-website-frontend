@@ -1,7 +1,7 @@
 import React, { lazy } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ResetCSS } from "@metagg/mgg-uikit";
-import Menu from "../components/Menu/index";
+import Menu from "../components/menu";
 import GlobalStyle from "../style/Global";
 import Footer from "../components/footer";
 import Homepage from './Homepage'
@@ -42,6 +42,7 @@ const Website: React.FC = () => {
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          hello
           <Footer />
       </Menu>
     </HashRouter>
